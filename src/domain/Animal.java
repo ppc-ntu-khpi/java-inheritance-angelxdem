@@ -1,26 +1,59 @@
 package domain;
 
+
+ /**
+ * Just class Animal that describe Animal
+ */ 
 public class Animal {
 
     protected String name;
 
     protected int weight;
 
-    public Animal() {
+
+/** 
+ * 
+ * It is default constructor. 
+ *
+ */
+    public Animal() { 
+
         name = "generic name";
         weight = 25;
     }
 
-    public void eat() {
+
+/** 
+ *
+ * This method describe how the animal eats
+ *
+ */
+    public void eat() { 
+
         System.out.println("Animal eating ...");
     }
 
-    public void speak() {
+
+/** 
+ *
+ * This method describe how the animal speaks
+ *
+ */
+    public void speak() { 
+
         System.out.println("Animal speak...");
     }
 
     @Override
-    public String toString() {
+
+/** 
+ *
+ * Decription animal in string
+ *
+ * @return String
+ */
+    public String toString() { 
+
         return "My animal:\n" + "name: " + name + "\nweight: " + weight;
     }
 }
